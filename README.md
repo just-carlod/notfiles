@@ -6,7 +6,7 @@
 *	bar : [polybar](https://github.com/just-carlod/notfiles/blob/master/polybar/config)
 *	program menu : dmenu
 *	terminal : [st](https://github.com/just-carlod/st), alacritty
-*	editor : [neovim] (https://github.com/just-carlod/notfiles/blob/master/nvim/init.vim)
+*	editor : [neovim](https://github.com/just-carlod/notfiles/blob/master/nvim/init.vim)
 *	notifications : dunst
 *	sreenshots : shotgun
 *	screen recorder : [blaze](https://github.com/cherrry9/blaze) - good job cherry :)
