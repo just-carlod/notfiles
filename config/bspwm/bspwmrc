@@ -4,7 +4,7 @@
 sxhkd -c $HOME/.config/bspwm/sxhkdrc >> /dev/null &
 polybar -r example &
 xrdb -load $HOME/.Xresources
-xwallpaper --focus ~/Downloads/8c72d443192c8a4d0b3f2fa00a6df4ed-375.jpg
+#xwallpaper --focus /path/to/file
 setxkbmap pl
 dunst >> /dev/null &
 picom&
@@ -26,5 +26,5 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Gnome-Screenshot state=floating
-bspc rule -a Alacritty state=floating 1000x600
+bspc rule -a Alacritty state=floating rectangle=1000x600+200+150
 #bspc rule -a Chromium desktop='^2'

@@ -13,11 +13,13 @@ super + {_,shift} + {1-9}
 	bspc {desktop -f,node -d} {I,II,III,IV,V,VI,VII,VIII,IX}
 super + {_,shift} + {h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
-super + {_,shift} + f
-	bspc node -t {floating,pseudotiled}
+super + shift + {w,s,x}
+	bspc node -t {floating,pseudo_tiled,tiled}
 super + {Left,Down,Up,Right}
-	bspc node -v {-10x 0y, 0x 10y, 0x -10y, 10x 0y}
-super + {minus,equal}
-	bspc node -z top_right { -10x 10y, 10x -10y } & bspc node -z bottom_left { 10x -10y, 10x -10y }
+	bspc node -v {-10 0,0 10,0 -10,10 0}
+super + equal
+	bspc node -z top_left -10 -10 && bspc node -z bottom_right 10 10
+super + minus
+	bspc node -z top_left 10 10 && bspc node -z bottom_right -10 -10
 super + F2
 	shotgun && notify-send -u normal "Screen has been captured"
