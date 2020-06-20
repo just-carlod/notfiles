@@ -2,7 +2,7 @@
 Feel free to copy and use them _(but I don't recommend this)_
 
 ### Software I use
-`	**os** : Arch Linux
+	**os** : Arch Linux
  	**wm** : [dwm](https://github.com/just-carlod/dwm), [bspwm](https://github.com/just-carlod/notfiles/tree/master/config/bspwm/bspwmrc)
  	terminal** : [st](https://github.com/just-carlod/st), [alacritty](https://github.com/just-carlod/notfiles/tree/master/config/alacritty/alacritty.yml)
  	**browser** : firefox, chromium and brave
@@ -13,5 +13,5 @@ Feel free to copy and use them _(but I don't recommend this)_
 	**program menu** : dmenu
 	**notifications** : dunst
 	**sreenshots** : shotgun
-	**screen recorder** : [blaze](https://github.com/cherrry9/blaze) - good job cherry :)`
+	**screen recorder** : [blaze](https://github.com/cherrry9/blaze) - good job cherry :)
 ##### My setup is **not complete** yet so please be keep that in mind
