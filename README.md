@@ -8,10 +8,10 @@ Feel free to copy and use them _(but I don't recommend this)_
 *	browser: firefox, chromium and brave
 *	editor: [neovim](https://github.com/just-carlod/notfiles/blob/master/nvim/init.vim)
 *	bar: [polybar](https://github.com/just-carlod/notfiles/blob/master/polybar/config)
-*	hotkey deamon : [sxhkd](https://github.com/just-carlod/notfiles/tree/master/config/bspwm/sxhkdrc)
-*	image viewer : sxiv
-*	program menu : dmenu
-*	notifications : dunst
-*	sreenshots : shotgun
-*	screen recorder : [blaze](https://github.com/cherrry9/blaze) - good job cherry :)
+*	hotkey deamon: [sxhkd](https://github.com/just-carlod/notfiles/tree/master/config/bspwm/sxhkdrc)
+*	image viewer: sxiv
+*	program menu: dmenu
+*	notifications: dunst
+*	sreenshots: shotgun
+*	screen recorder: [blaze](https://github.com/cherrry9/blaze) - good job cherry :)
 ##### My setup is not complete yet so please be keep that in mind
