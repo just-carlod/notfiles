@@ -7,7 +7,7 @@ Feel free to copy and use them _(but I don't recommend this)_
 *	terminal: [st](https://github.com/just-carlod/st), [alacritty](https://github.com/just-carlod/notfiles/tree/master/config/alacritty/alacritty.yml)
 *	browser: firefox, chromium and brave
 *	editor: [neovim](https://github.com/just-carlod/notfiles/blob/master/nvim/init.vim)
-*	bar: [polybar](https://github.com/just-carlod/notfiles/blob/master/polybar/config)
+*	bar: [polybar](https://github.com/just-carlod/notfiles/blob/master/polybar/polybar.md)
 *	hotkey deamon: [sxhkd](https://github.com/just-carlod/notfiles/tree/master/config/bspwm/sxhkdrc)
 *	image viewer: sxiv
 *	program menu: dmenu
