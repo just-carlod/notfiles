@@ -6,8 +6,8 @@ Feel free to copy and use them _(but I don't recommend this)_
 *	wm: [dwm](https://github.com/just-carlod/dwm), [bspwm](https://github.com/just-carlod/notfiles/tree/master/config/bspwm/bspwmrc)
 *	terminal: [st](https://github.com/just-carlod/st), [alacritty](https://github.com/just-carlod/notfiles/tree/master/config/alacritty/alacritty.yml)
 *	browser: firefox, chromium and brave
-*	editor: [neovim](https://github.com/just-carlod/notfiles/blob/master/nvim/init.vim)
-*	bar: [polybar](https://github.com/just-carlod/notfiles/blob/master/polybar/polybar.md)
+*	editor: [neovim](https://github.com/just-carlod/notfiles/blob/master/config/nvim/init.vim)
+*	bar: [polybar](https://github.com/just-carlod/notfiles/blob/master/config/polybar/polybar.md)
 *	hotkey deamon: [sxhkd](https://github.com/just-carlod/notfiles/tree/master/config/bspwm/sxhkdrc)
 *	image viewer: sxiv
 *	program menu: dmenu
