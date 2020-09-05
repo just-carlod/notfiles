@@ -1,0 +1,29 @@
+#! /bin/sh
+
+check() {
+	echo -e "$(date "+%H")\n$(curl -X GET "https://disease.sh/v3/covid-19/countries/Poland")" > ~/.cache/covid-19
+}
+short() {
+	printf "TODAY 😷 $( sed -n 2p ~/.cache/covid-19 | sed 's/"todayCases"//g'| cut -d ',' -f  10 ) 😀 $(sed -n 2p ~/.cache/covid-19 | sed 's/"todayRecovered"//g' | cut -d ',' -f 14 ) \n"
+}
+list() {
+	short
+	printf "TOTAL CASES $( sed -n 2p ~/.cache/covid-19 | sed 's/"cases"//g'| cut -d ',' -f 9) \n"
+	printf "ACTIVE CASES $( sed -n 2p ~/.cache/covid-19 | sed 's/"active"//g'| cut -d ',' -f 15) ⚕\n"
+	exit
+}
+update() {
+	kill -36 $(pidof dwmblocks)
+	notify-send "covid has been updated"
+	exit
+}
+man() {
+	printf "\033[1mUSAGE : corona [option]\n\033[0;33m -a\tall data\n -h\thelp\n NULL\tshort info\n"
+	exit
+}
+case "$1" in
+	-a ) [ "$(date '+%H')" -eq "$(sed -n 1p ~/.cache/covid-19)" ] && list || check && list ;;
+	-h ) man ;;
+	-c ) check && exit;;
+	"$NULL" ) [ "$(date '+%H')" -eq "$(sed -n 1p ~/.cache/covid-19)" ] && short || check && check && update || exit ;;
+esac

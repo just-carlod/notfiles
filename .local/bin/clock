@@ -1,0 +1,20 @@
+#! /bin/sh
+
+clock() {
+	printf "$(date '+⌚%A, %T')   "
+}
+detail_clock() {
+	printf "$(date '+%D, ⌚%T')\n"
+}
+loop() {
+	while :
+	do
+		xsetroot -name "$(clock)"
+		sleep 1
+	done
+}
+case $1 in
+	"$NULL") clock && exit ;;
+	-u) detail_clock && exit ;;
+	-l) loop ;;
+esac

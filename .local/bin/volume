@@ -1,0 +1,43 @@
+#! /bin/sh
+
+NUM="${2:-5}"
+vol="$(pulsemixer --get-volume)"
+tvol="${vol%% *}"
+
+vol() {
+	[ $(pulsemixer --get-mute) == 1 ] && speaker="🔇" || speaker="🔉"
+	echo "$speaker $tvol"
+	exit
+}
+update_bar() {
+	kill -35 $(pidof dwmblocks)
+}
+change_vol() {
+	pulsemixer --"$opt"-volume "$NUM"
+	notify-send "Volume has been changed $NUM"
+	update_bar
+	exit
+}
+mute() {
+	[ $(pulsemixer --get-mute) == 1 ] && pulsemixer --unmute || pulsemixer --mute
+	update_bar
+	exit
+}
+man() {
+	printf " Usage:\tVolume + [command] + optional [argument]
+	-a or add\t change volume
+	-h\t\t help
+	-m\t\t mute sound
+	-s or set\t set volume
+	-u\t\t update bar\n"
+}
+case $1 in
+	"$NULL") vol ;;
+	-a) opt="change"; change_vol ;;
+	-h) man ;;
+	-m) mute ;;
+	-s) opt="set"; change_vol ;;
+	-u) update_bar ;;
+	add) opt="change"; change_vol ;;
+	set) opt="set"; change_vol ;;
+esac
