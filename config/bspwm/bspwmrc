@@ -4,7 +4,6 @@
 sxhkd -c $HOME/.config/bspwm/sxhkdrc >> /dev/null &
 polybar -r example &
 xrdb -load $HOME/.Xresources
-#xwallpaper --focus /path/to/file
 setxkbmap pl
 dunst >> /dev/null &
 picom&

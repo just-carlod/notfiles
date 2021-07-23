@@ -1,0 +1,9 @@
+[submodule "config/dwm"]
+	path = config/dwm
+	url = https://github.com/just-carlod/dwm
+[submodule "config/st"]
+	path = config/st
+	url = https://github.com/just-carlod/st
+[submodule "config/dmenu"]
+	path = config/dmenu
+	url = https://github.com/just-carlod/dmenu
